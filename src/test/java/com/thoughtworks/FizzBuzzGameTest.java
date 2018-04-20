@@ -41,4 +41,12 @@ public class FizzBuzzGameTest {
     assertThat(results.get(4), equalTo("Buzz"));
     assertThat(results.get(9), equalTo("Buzz"));
   }
+
+  @Test
+  public void should_return_Fizz_when_have_7() {
+    FizzBuzzGame game = new FizzBuzzGame();
+    game.start(7);
+    List<String> results = game.getResults();
+    assertThat(results.get(6), equalTo("Whizz"));
+  }
 }
