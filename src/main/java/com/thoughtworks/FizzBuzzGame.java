@@ -21,6 +21,11 @@ public class FizzBuzzGame {
         continue;
       }
 
+      if (text.contains("5")) {
+        results.add("Buzz");
+        continue;
+      }
+
       results.add(text);
     }
   }
