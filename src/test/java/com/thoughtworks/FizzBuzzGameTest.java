@@ -49,4 +49,13 @@ public class FizzBuzzGameTest {
     List<String> results = game.getResults();
     assertThat(results.get(6), equalTo("Whizz"));
   }
+
+  @Test
+  public void should_return_Fizz_when_number_is_n_times_as_7() {
+    FizzBuzzGame game = new FizzBuzzGame();
+    game.start(14);
+    List<String> results = game.getResults();
+    assertThat(results.get(6), equalTo("Whizz"));
+    assertThat(results.get(13), equalTo("Whizz"));
+  }
 }
