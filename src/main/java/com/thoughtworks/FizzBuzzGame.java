@@ -12,6 +12,13 @@ public class FizzBuzzGame {
       String text = String.format("%d", i);
 
       if (i % 3 == 0
+          && i % 5 == 0
+          && i % 7 == 0) {
+        results.add("FizzBuzzWhizz");
+        continue;
+      }
+      
+      if (i % 3 == 0
           && i % 5 == 0) {
         results.add("FizzBuzz");
         continue;
