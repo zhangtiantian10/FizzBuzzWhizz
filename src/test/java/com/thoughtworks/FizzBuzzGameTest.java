@@ -32,4 +32,13 @@ public class FizzBuzzGameTest {
     List<String> results = game.getResults();
     assertThat(results.get(4), equalTo("Buzz"));
   }
+
+  @Test
+  public void should_return_Fizz_when_number_is_n_times_as_5() {
+    FizzBuzzGame game = new FizzBuzzGame();
+    game.start(10);
+    List<String> results = game.getResults();
+    assertThat(results.get(4), equalTo("Buzz"));
+    assertThat(results.get(9), equalTo("Buzz"));
+  }
 }

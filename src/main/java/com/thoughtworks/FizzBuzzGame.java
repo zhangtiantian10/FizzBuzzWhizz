@@ -16,6 +16,11 @@ public class FizzBuzzGame {
         continue;
       }
 
+      if (i % 5 == 0) {
+        results.add("Buzz");
+        continue;
+      }
+
       if (text.contains("3")) {
         results.add("Fizz");
         continue;
