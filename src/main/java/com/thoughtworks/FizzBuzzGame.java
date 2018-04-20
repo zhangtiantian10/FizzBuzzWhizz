@@ -17,6 +17,12 @@ public class FizzBuzzGame {
         continue;
       }
 
+      if (i % 3 == 0
+          && i % 7 == 0) {
+        results.add("FizzWhizz");
+        continue;
+      }
+
       if (i % 3 == 0) {
         results.add("Fizz");
         continue;
